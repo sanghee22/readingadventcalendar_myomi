@@ -1,0 +1,442 @@
+body {
+  background-image: url("image/bgg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body {
+  background-color: #d6d4e2;
+  color: black;
+  font-weight: bold;
+}
+
+/* 그리드 설계 */
+.grid-1 {
+  display: grid;
+  width: 90vw;
+  max-width: 400px;
+  margin: 2% auto;
+  z-index: 1;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 25px;
+
+  grid-template-areas:
+    "t        t       t"
+    "d1       d2      d3"
+    "d4       d5      d6"
+    "d7       d8      d9"
+    "d10      d11     d14"
+    "d12      d13     d14";
+}
+
+
+/* flex 속성 */
+.flex-row {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-baseline {
+  align-items: baseline;
+}
+
+.title {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+
+  grid-area: t;
+}
+
+.title img {
+  width: 90%;
+  height: auto;
+}
+
+/* 그리드 별 배경 이미지 */
+.day-1 {
+  grid-area: d1;
+  background-image: url("image/bbacck.png");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-1 .back {
+  background-image: url("image/spadea.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-2 {
+  grid-area: d2;
+  background: url("image/bbacck.png");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-2 .back {
+  background-image: url("image/spade2.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-3 {
+  grid-area: d3;
+  background: url("image/bbacck.png");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-3 .back {
+  background-image: url("image/spade3.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-4 {
+  grid-area: d4;
+  background: url("image/bbacck.png");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-4 .back {
+  background-image: url("image/spade4.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-5 {
+  grid-area: d5;
+  background: url("image/bbacck.png");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-5 .back {
+  background-image: url("image/spade5.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-6 {
+  grid-area: d6;
+  background: url("image/bbacck.png");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-6 .back {
+  background-image: url("image/spade6.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-7 {
+  grid-area: d7;
+  background: url("image/bbacck.png");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-7 .back {
+  background-image: url("image/spade7.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-8 {
+  grid-area: d8;
+  background: url("image/bbacck.png");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-8 .back {
+  background-image: url("image/spade8.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-9 {
+  grid-area: d9;
+  background: url("image/bbacck.png");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-9 .back {
+  background-image: url("image/spade9.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-10 {
+  grid-area: d10;
+  background: url("image/bbacck.png");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-10 .back {
+  background-image: url("image/spade10.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-11 {
+  grid-area: d11;
+  background: url("image/bbacck.png");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-11 .back {
+  background-image: url("image/spadej.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-12 {
+  grid-area: d12;
+  background: url("image/bbacck.png");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-12 .back {
+  background-image: url("image/spadeq.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-13 {
+  grid-area: d13;
+  background: url("image/bbacck.png");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-13 .back {
+  background-image: url("image/spadek.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.day-14 {
+  grid-area: d14;
+  background: url("image/bbacck.png");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.day-14 .back {
+  background-image: url("image/zoker.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+/* door styles */
+.grid-1 input {
+  display: none;
+}
+
+label {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  cursor: pointer;
+
+  display: flex;
+  min-height: 100%;
+  width: 100%;
+  height: 120px;
+}
+
+/* flex 속성 */
+.flex-row {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-baseline {
+  align-items: baseline;
+}
+
+.title {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+
+  grid-area: t;
+}
+
+.title img {
+  width: 90%;
+  height: auto;
+}
+
+
+
+/* door styles */
+.grid-1 input {
+  display: none;
+}
+
+label {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  cursor: pointer;
+
+  display: flex;
+  min-height: 100%;
+  width: 100%;
+  height: 120px;
+}
+
+/* 카드 앞면 */
+.door {
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: all 300ms;
+  border-radius: 10px;
+}
+
+.date-num {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: white;
+}
+
+/* 카드 뒷면 */
+.door div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+
+  border-radius: 6px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* 카드 뒤집기 애니메이션 */
+.door .back {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transform: rotateY(180deg);
+}
+
+:checked+.door {
+  transform: rotateY(180deg);
+}
+
+/* 확대 및 회전 애니메이션 */
+@keyframes zoomAndRotate {
+  from {
+    transform: scale(0) rotateY(0deg);
+  }
+
+  to {
+    transform: scale(1) rotateY(360deg);
+  }
+}
+
+/* 애니메이션 적용 */
+.zoomIn {
+  animation: zoomAndRotate 0.5s ease forwards;
+}
+
+
+.hidden {
+  visibility: hidden;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+.modal-content {
+  width: 340px;
+  height: 347px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 이미지와 텍스트가 있는 카드를 위한 스타일 */
+.modal-content div {
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+}
+
+.modal-content p {
+  width: 300px;
+  color: black;
+  margin-top: 30px;
+  margin-bottom: 0;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  font-weight: bold;
+  font-size: 17px;
+  word-break: keep-all;
+}
